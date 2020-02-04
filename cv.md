@@ -7,6 +7,7 @@
 * Github: [https://github.com/Alexandra789](https://github.com/Alexandra789)
 
 ## Summary
+Promising and hard-working web-developer with high desire to get new skills looking for a good place to express herself and get new experience.
 
 ## Skills
 
