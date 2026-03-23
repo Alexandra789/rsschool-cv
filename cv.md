@@ -43,5 +43,5 @@ Developed interfaces based on Figma designs with WordPress integration: created 
 2025: IT-academy — React 
 
 ## English Language
-English lvl: B1  
+**English lvl:** B1  
 I studied English with a tutor for one year and continue to improve my skills independently. I read technical documentation and watch professional videos in English.
