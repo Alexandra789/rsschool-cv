@@ -17,6 +17,11 @@ I have experience in interface development — I worked on supporting and improv
 * Tools: VS Code
 
 ## Code examples
+```
+function findAverage(array) {
+  return array.length ? array.reduce((sum, el) => sum + el) / array.length : 0
+}
+```
 You can see my code on the [Github](https://github.com/Alexandra789)
 
 ## Work Experience
