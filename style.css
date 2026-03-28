@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: #e5eaf55c;
+    color: #454B73;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+ul:not(ul.contacts-list) {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 763px;
+    padding: 0 16px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+}
+
+.header__inner,
+.main__inner {
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.resume__title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.resume__position {
+    font-size: 16px;
+    color: #9da0b5;
+}
+
+.triangle-img {
+    position: absolute;
+    left: 0;
+}
+
+.line-img {
+    position: absolute;
+}
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+}
+
+.contacts-list__item {
+    background: #fde6e7;
+    border-radius: 20px;
+    padding: 3px 6px 3px 40px;
+    position: relative;
+}
+
+.contacts-list__icons {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.round {
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.black-round {
+    border: 1px solid #242B4F;
+    bottom: 5px;
+    right: 15px;
+}
+
+.white-round {
+    background: white;
+    z-index: -1;
+    bottom: 10px;
+    right: 0px;
+}
+
+.resume-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
