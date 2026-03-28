@@ -324,3 +324,22 @@ section:not(section:last-of-type) {
     position: relative;
     z-index: 1;
 }
+
+.footer .container {
+    background: linear-gradient(90deg, #dce2f2 0%, #fbd6d7 100%);
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+    color: #454B73;
+}
+
+.footer__logo {
+    height: 24px;
+    width: auto;
+    display: block;
+}
