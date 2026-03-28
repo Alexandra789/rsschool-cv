@@ -14,6 +14,11 @@ body {
     font-weight: 400;
     background-color: #e5eaf55c;
     color: #454B73;
+    overflow-x: clip;
+}
+
+.resume {
+    overflow-x: clip;
 }
 
 a {
@@ -33,6 +38,7 @@ ul:not(ul.contacts-list) {
 }
 
 .container {
+    width: 100%;
     max-width: 763px;
     padding: 0 16px;
     margin: 0 auto;
@@ -142,10 +148,12 @@ ul:not(ul.contacts-list) {
 
 .main-left {
     width: 60%;
+    min-width: 0;
 }
 
 .main-right {
     width: 30%;
+    min-width: 0;
 }
 
 .section-title-wrapper {
@@ -355,4 +363,119 @@ section:not(section:last-of-type) {
     height: 24px;
     width: auto;
     display: block;
+}
+
+.experience-link {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .main__inner {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .main-left,
+    .main-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-information {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .contacts-list {
+        align-items: stretch;
+    }
+
+    .contacts-list__item {
+        text-align: left;
+    }
+
+    .contacts-list__link {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .triangle-img,
+    .line-img {
+        max-width: min(140px, 42vw);
+        height: auto;
+    }
+
+    .experience__item .place {
+        padding-right: 0;
+        padding-bottom: 2px;
+    }
+
+    .date {
+        position: static;
+        display: block;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .experience__item .item-content {
+        padding-left: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume__title {
+        font-size: 22px;
+    }
+
+    .section-title-wrapper.triangle {
+        background-size: 72px;
+    }
+
+    .black-round,
+    .white-round,
+    .resume-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .black-round {
+        bottom: 4px;
+        right: 12px;
+    }
+
+    .white-round {
+        bottom: 8px;
+        right: 0;
+    }
+
+    .code-example pre {
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    .hobby-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer__inner {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 12px 16px;
+    }
 }
