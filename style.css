@@ -214,7 +214,7 @@ section:not(section:last-of-type) {
     left: 0;
     height: 100%;
     width: var(--fill-width, 0%);
-    background-color: #fbd6d7;
+    background-color: #dce2f2;
     border-radius: 20px;
     z-index: 0;
     transition: width 0.3s ease;
@@ -225,11 +225,11 @@ section:not(section:last-of-type) {
 }
 
 .languages-list__item:nth-child(odd) .bar::before {
-    background-color: #dce2f2;
+    background-color: #fbd6d7;
 }
 
 .skills-list__item:nth-child(odd) .bar::before {
-    background-color: #dce2f2;
+    background-color: #fbd6d7;
 }
 
 .language-name {
@@ -308,6 +308,16 @@ section:not(section:last-of-type) {
     margin-right: 4px;
 }
 
+.code-example pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: linear-gradient(90deg, #dce2f2 0%, #fbd6d7 100%);
+    padding: 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-top: 0;
+    text-align: start;
+}
 
 .experience__item .item-content::before {
     content: "•";
